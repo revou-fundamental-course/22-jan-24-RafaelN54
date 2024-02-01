@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Agent | Isekai Wibu</title>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header style="border-bottom: 1px solid black">
+    <navbar class="container">
+      <div class="navbar">
+        <img class="logo" src="/image/colorful-letter-gradient-logo-design_474888-2309.avif" alt="" />
+        <div class="menu">
+          <a class="menu-item" href="#hero">Home</a>
+          <a class="menu-item" href="#package">Our Package</a>
+          <a class="menu-item" href="#call-us">Call us</a>
+        </div>
+      </div>
+    </navbar>
+  </header>
+  <!-- main -->
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-title">
+          <h1>Jual Beli Online</h1>
+          <h6>Akun Game, Akun Netflix dll</h6>
+        </div>
+      </div>
+    </section>
+    <section id="about-contact">
+      <div class="container">
+        <div class="about-contact">
+          <div class="about">
+            <img class="about-img" src="http://placekitten.com/450/450" alt="" />
+            <div class="about-content">
+              <div class="content-caption">
+                <p><i>Halo guys, perkenalkan nama saya Rafael Natanael</i></p>
+              </div>
+              <div class="content-person">
+                <img src="http://placekitten.com/50/50" alt="" />
+                <div class="person-info">
+                  <h6>Rafael Natanael</h6>
+                  <p>CEO</p>
+                </div>
+              </div>
+            </div>
+            <hr class="border" />
+            <div class="about-information">
+              <h6 class="information-title">List Kalian</h6>
+              <ul class="information-list">
+                <li>
+                  <div class="list-number">1</div>
+                  <p class="list-paragraf">your first feature</p>
+                </li>
+                <li>
+                  <div class="list-number">2</div>
+                  <p class="list-paragraf">your first feature</p>
+                </li>
+                <li>
+                  <div class="list-number">3</div>
+                  <p class="list-paragraf">your first feature</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <section id="message-us">
+            <div class="container">
+              <!-- form section -->
+              <div class="form-section">
+                <form name="message-form" onsubmit="return validateForm()">
+                  Nama:
+                  <input placeholder="name" type="text" name="full-name" />
+                  <br />
+    
+                  Tanggal Lahir:
+                  <input type="date" name="birth-date" />
+                  <br />
+    
+                  Jenis Kelamin Aku:
+                  <input type="radio" id="male" name="gender" value="Laki-laki" />
+                  <label for="male">Laki-laki</label>
+                  <input type="radio" id="female" name="gender" value="Perempuan" />
+                  <label for="female">Perempuan</label>
+                  <input
+                    type="radio"
+                    id="non-binary"
+                    name="gender"
+                    value="Non-binary"
+                  />
+                  <label for="non-binary">Non Binary</label>
+                  <br />
+    
+                  Pesan:
+                  <textarea placeholder="Pesan" name="messages"></textarea>
+                  <br />
+    
+                  <input type="submit" value="Submit" />
+                </form>
+    
+                <div class="form-output">
+                  <p>Nama: <span id="sender-full-name"></span></p>
+                  <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                  <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                  <p>Pesan: <span id="sender-messages"></span></p>
+                </div>
+              </div>
+              <!-- end of form section -->
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer></footer>
+</body>
+<script>
+  // js kita
+  console.log('HAlo dari javascript internal');
+</script>
+  <script src="js/app.js"></script>
+</html>
